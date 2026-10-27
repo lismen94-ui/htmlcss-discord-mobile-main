@@ -36,7 +36,7 @@ img, video {
 }
 
 .banner{
-    padding: 50px 20px;
+    padding: px px;
     margin-bottom: 400px;
 line-height: 1.5;
 color: #ffffff;
@@ -119,7 +119,7 @@ padding-bottom: 0px;
    display: inline-block;
    width: 80px;           /* Cambia i pixel per rimpicciolire/ingrandire */
     margin-top: 20px;
-   translate: -120px -640px;
+   translate: -120px -665px;
 
 }
  
@@ -149,7 +149,7 @@ padding-bottom: 0px;
      display: inline-block;
  width: 80px;           /* Cambia i pixel per rimpicciolire/ingrandire */
     margin-top: 20px;
-   translate: -120px -640px;
+   translate: -120px -665px;
 
 
 }
