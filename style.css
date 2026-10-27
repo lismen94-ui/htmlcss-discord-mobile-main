@@ -1,7 +1,3 @@
-/* 1. Imposta DM Sans come font predefinito per tutta la pagina */
-body {
-    font-family: 'DM Sans', sans-serif;
-}
 
 /* 2. Imposta Sigmar solo per i titoli grandi (h1, h2, ecc.) */
 h1, h2, h3 {
@@ -15,25 +11,145 @@ h1, h2, h3 {
     box-sizing: border-box;
 }
 
+
+
 /* Font e sfondo di base */
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #2d3144; /* o il colore scuro dello sfondo */
+    background-color: #303c77; /* o il colore scuro dello sfondo */
     color: #ffffff;
-    background-image: url('img/background.png');
+   
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 512px;       /* Fissa la larghezza esattamente a 512 pixel come richiesto */
+    max-width: 100%;    /* Misura di sicurezza per schermi più piccoli */
+    margin: 0;
 }
 
-/* Titoli principali con il font Sigmar */
-h1, h2 {
-    font-family: 'Sigmar', cursive;
-}
 
 /* Tutte le immagini si adatteranno alla larghezza del loro contenitore */
 img, video {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.banner{
+    padding: 50px 20px;
+    margin-bottom: 400px;
+line-height: 1.5;
+color: #ffffff;
+}
+
+.banner h1 {
+font-size: 28px;
+text-align: center;
+margin-bottom: 16px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+} 
+.banner p {
+    font-size: 15px;
+text-align: center;
+margin-bottom: 20px;
+color: #dbe5f0;
+}
+
+.banner-buttons {
+    display: flex;
+    flex-direction: column; /* Li mette uno sopra l'altro */
+    gap: 16px;              /* Spazio verticale tra i pulsanti */
+    margin-top: 50px;
+
+    align-items: center;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;               /* Spazio tra l'icona del download e il testo */
+    width: 80%;
+    padding: 10px 16px;
+    border-radius: 28px;     /* Forma a pillola tipica di Discord */
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;   /* Toglie la sottolineatura da link */
+    cursor: pointer;         /* Fa apparire la manina */
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.button-white {
+    background-color: #ffffff;
+    color: #23272a;
+}
+.button-dark {
+    background-color: #4728f3bb;
+     color: #fdfeff;
+     margin-bottom: 50px;
+}
+
+.presentation {
+ font-size: 28px;
+text-align: center;
+margin-bottom: 50px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+padding: 50px 20px;
+background-image:url('img/background.png');
+ background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+border-radius: 30px;
+padding-top: 50px;
+padding-bottom: 0px;
+
+}
+
+.video-demo {
+     border-radius: 28px;
+     display: block;
+     margin-bottom: 0%;
+      
+}
+
+.img-cubo {
+   display: inline-block;
+   width: 80px;           /* Cambia i pixel per rimpicciolire/ingrandire */
+    margin-top: 20px;
+   translate: -120px -640px;
+
+}
+ 
+.card {
+     font-size: 28px;
+text-align: center;
+margin-bottom: 10px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+padding: 50px 20px;
+background-image:url('img/background.png');
+ background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+border-radius: 30px;
+padding-top: 50px;
+padding-bottom: 0px;
+
+}
+
+.video-strem {
+     border-radius: 28px;
+     display: block;
+     margin-bottom: 0%;
+}
+
+.eyes {
+     display: inline-block;
+ width: 80px;           /* Cambia i pixel per rimpicciolire/ingrandire */
+    margin-top: 20px;
+   translate: -120px -640px;
+
+
 }
